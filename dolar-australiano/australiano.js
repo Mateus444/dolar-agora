@@ -1,13 +1,13 @@
 	let jsonRetorno = new XMLHttpRequest();
-	let url = "https://economia.awesomeapi.com.br/json/last/BRL-AUD";
+	let url = "https://economia.awesomeapi.com.br/json/last/AUD-BRL";
 
 	jsonRetorno.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
       		let retorno = jsonRetorno.responseText;
       		let retornoParaObject =  JSON.parse(retorno);
           console.log(retornoParaObject);
-      		let cotacao = retornoParaObject.BRLAUD.bid;
-      		let varicao = retornoParaObject.BRLAUD.pctChange;
+      		let cotacao = retornoParaObject.AUDBRL.bid;
+      		let varicao = retornoParaObject.AUDBRL.pctChange;
       		let cotacaoFloat = parseFloat(cotacao);
       		var varicaoFloat = parseFloat(varicao);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);

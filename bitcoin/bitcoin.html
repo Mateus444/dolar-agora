@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Converter Bitcoin para Real brasileiro.">
+	<meta name="author" content="Mateus Gustavo">
+	<meta name="keywords" content="Bitcoin, cotação, quanto vale, preço do bitcoin, bitcoin para real brasileiro, Converter, hoje, agora,">
+	<meta name="robots" content="index, nofolow">
+	<title>COTAÇÂO DO BITCOIN</title>
+	<link href="bitcoin.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="imagens/bitcoin-icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<body>
+
+	<div class="container-principal">
+		<header class="header">
+			<div class="icone" onclick="inicio()">
+				<div class="moeda-simbolo">
+					<img src="imagens/dolar-icon.png" alt="Simbolo do dolar">
+				</div>
+				<div class="site-nome">
+					<h2>DÓLAR<br>AGORA</h2>
+				</div>
+			</div>
+			
+			<div class="sobre">
+				<a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
+			</div>
+				
+		</header>
+		<div id="menu" onclick="chamarMenu()">
+			
+		</div>
+			<ul id="opcoes">
+				<li><a href="https://mateus444.github.io/dolar-agora/index.html">Dólar Americano</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dolar-turismo/turismo.html">Dólar Turismo</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dolar-canadense/canadense.html">Dólar Canadense</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dolar-australiano/australiano.html">Dólar Australiano</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/bitcoin/bitcoin.html">Bitcoin</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/peso-argentino/argentino.html">Peso Argentino</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/ethereum/ethereum.html">Ethereum</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/euro/euro.html">Euro</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dogecoin/dogecoin.html">Dogecoin</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/libra/libra.html">Libra Esterlina</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dolar-hongkong/hongkong.html">Dólar de Hong Kong</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/peso-mexicano/mexicano.html">Peso Mexicano</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/dolar-taiuanes/taiuanes.html">Dólar Taiuanês</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/franco-suico/suico.html">Franco Suíço</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/yual-chines/chines.html">Yuan Chinês</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/ienes-japones/japones.html">Iene Japonês</a></li>
+				<li><a href="https://mateus444.github.io/dolar-agora/litecoin/litecoin.html">Litecoin</a></li>
+			</ul>
+
+		<div class="adsense">
+			
+		</div>
+		<div class="input-area">
+			<div class="moeda-icon">
+				<div class="moeda">
+					<img src="imagens/bitcoin-icon.png">
+				</div>
+				<h3 id="moeda-nome">Bitcoin</h3>
+			</div>
+				<div class="conversor">
+				<div id="input-1">	
+					<span id="moeda-cod1">BTC</span>
+					<input id="entrada-1" type="number" value="1">
+				</div>
+		
+				<div id="input-2">
+					<span id="moeda-cod1">R$</span>
+				 	<input id="entrada-2" type="number" value="0.00">
+				</div>
+			</div>
+			<div class="conteudo">
+				<span id="ult24">Últimas 24 horas</span>
+				<div class="alta">
+					<span>Abertura:</span>
+					<span id="abertura">0.00</span>
+				</div>
+
+				<div class="alta">
+					<span>Alta:</span>
+					<span id="alta">0.00</span>
+				</div>
+				<div class="baixa">
+					<span>Baixa:</span>
+					<span id="baixa">0.00</span>
+				</div>
+			</div>
+		</div>
+		<div class="adsense-2">
+		
+		</div>
+		<footer>
+			<a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
+			<a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" target="_blank" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a>
+			<a href="https://www.flaticon.com/br/icones-gratis/dolar" target="_blank" title="dólar ícones">Dólar ícones criados por kliwir art - Flaticon</a>
+			<a href="https://www.flaticon.com/br/icones-gratis/bitcoin" title="bitcoin ícones">Bitcoin ícones criados por adriansyah - Flaticon</a>
+			<a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
+		</footer>
+
+		<script>
+		let input1 = document.getElementById("entrada-1");
+		let input1Fundo = document.getElementById("input-1");
+		input1.addEventListener('focus', function() {
+			input1.style.backgroundColor = "#3C4352";
+			input1Fundo.style.backgroundColor = "#3C4352";
+		});
+		let input2 = document.getElementById("entrada-2");
+		let input2Fundo = document.getElementById("input-2");
+		input2.addEventListener('focus', function() {
+			input2.style.backgroundColor = "#3C4352";
+			input2Fundo.style.backgroundColor = "#3C4352";
+		});
+
+		input1.addEventListener('blur', function() {
+			input1.style.backgroundColor = "#4E586E";
+			input1Fundo.style.backgroundColor = "#4E586E";
+		});
+
+		input2.addEventListener('blur', function() {
+			input2.style.backgroundColor = "#4E586E";
+			input2Fundo.style.backgroundColor = "#4E586E";
+		});
+
+
+	</script>
+	<script>
+		let botaoMenu = document.getElementById("menu");
+		var verificarClick = document.getElementById("opcoes");
+		function mostrarMenu() {
+			document.getElementById("opcoes").style.display = "block";
+		}
+		function esconderMenu() {
+			document.getElementById("opcoes").style.display = "none";
+		}
+
+		function chamarMenu() {
+			if (verificarClick.style.display == 'none') {
+				mostrarMenu();
+			}else {
+				esconderMenu();
+			}
+		}
+
+	</script>
+	<script>
+		function inicio() {
+			window.location.href = "https://mateus444.github.io/dolar-agora/";
+		}
+	</script>
+	</div>
+
+	<script type="text/javascript" src="bitcoin.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

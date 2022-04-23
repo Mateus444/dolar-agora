@@ -137,22 +137,16 @@
 	</script>
 	<script>
 		let botaoMenu = document.getElementById("menu");
-		var verificarClick = document.getElementById("opcoes");
-		function mostrarMenu() {
-			document.getElementById("opcoes").style.display = "block";
-		}
-		function esconderMenu() {
-			document.getElementById("opcoes").style.display = "none";
-		}
+		let botaoStatus = document.getElementById("opcoes");
 
 		function chamarMenu() {
-			if (verificarClick.style.display == 'none') {
-				mostrarMenu();
-			}else {
-				esconderMenu();
+			if (botaoStatus.style.display != "block") {
+				document.getElementById("opcoes").style.display = "block";
+			}
+			else {
+				document.getElementById("opcoes").style.display = "none";
 			}
 		}
-
 	</script>
 	<script>
 		function inicio() {

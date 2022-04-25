@@ -87,8 +87,81 @@
 			</div>
 		</div>
 
-		<div class="adsense-2">
-		
+		<div class="grafico">
+			<h3>Gráfico últimos 30 dias</h3>
+			<canvas id="myChart"></canvas>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>
+			var url30 = "https://economia.awesomeapi.com.br/json/daily/GBP-BRL/30";
+			var xhttp = new XMLHttpRequest();
+
+			xhttp.onreadystatechange = function() {
+		    	if (this.readyState == 4 && this.status == 200) {
+			       	var retorno = xhttp.responseText;
+			       	var retornoParaObj = JSON.parse(retorno);
+
+			       	//pegar e formatar as cotações
+			       	var cotacoes = [];
+			       	var cotacoesParaFloat = [];
+			       	var cotacoesForamatadas = [];
+			       	for (let i = 0; i < 30; i++) {
+			       		cotacoes[i] = retornoParaObj[i].bid;
+			       		cotacoesParaFloat[i] = parseFloat(cotacoes[i]);
+			       		cotacoesForamatadas[i] = cotacoesParaFloat[i].toFixed(2);
+			       	}
+
+			       	//pegar a data de cada cotação em milisegungos e formatar
+			       	var segundos = [];
+			       	var segundosInt = [];
+			       	var datas = [];
+			       	for (let i = 0; i < 30; i++) {
+			       		segundos[i] = retornoParaObj[i].timestamp;
+			       		segundosInt[i] = parseInt(segundos[i]);
+			       		datas[i] = new Date(segundosInt[i] * 1000);
+			       	}
+
+			       	var dias = [];
+			       	var meses = [];
+			       	var ano = [];
+			       	for (let i = 0; i < 30; i++) {
+			       		dias[i] = ("0"+datas[i].getDate()).slice(-2);
+			       		meses[i] = ("0"+datas[i].getMonth()).slice(-2);
+			       		ano[i] = datas[i].getFullYear();
+			       	}
+
+			       	var periodos = [];
+			       	for (i = 0; i < 30; i++) {
+			       		periodos[i] = dias[i]+"/"+meses[i]+"/"+ano[i];
+			       	}
+
+			       	periodos.reverse();
+			       	cotacoesForamatadas.reverse();
+
+			       	//Desenha o grafico na tela
+			       	var ctx = document.getElementById('myChart');
+			       	Chart.defaults.font.size = 12;
+			       	Chart.defaults.color = '#DCDCDC';
+			       	var cotGraficco = new Chart(ctx, {
+						type: 'line',
+						data: {
+							labels: periodos,
+							datasets: [{
+								color: 'blue',
+								pointRadius: 1,
+								label: "Cotação",
+								data: cotacoesForamatadas,
+								borderWidth: 4,
+								borderColor: "#F54B64",
+							}]
+						},
+		       	    });
+		        }
+			};
+
+			xhttp.open("GET", url30, true);
+			xhttp.send();
+		</script>
 		</div>
 		<footer>
 			<a href="shttps://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>

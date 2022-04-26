@@ -239,6 +239,13 @@ li {
 	font-size: 20px;
 }
 
+#porcent {
+	font-family: inter;
+	color: #DCDCDC;
+	font-size: 20px;
+}
+
+
 .grafico {
 	max-width: 700px;
 	margin: auto;

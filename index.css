@@ -1,11 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: 0;
-}
-
-body {
-	background-color: #4E586E;
+kground-color: #4E586E;
 }
 
 .container-principal {
@@ -87,7 +80,7 @@ body {
 }
 
 .input-area {
-	width: 700px;
+	max-width: 600px;
 	margin: auto;
 	display: flex;
 	justify-content: center;

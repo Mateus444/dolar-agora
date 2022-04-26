@@ -75,6 +75,14 @@ body {
 	font-family: inter;
 	text-decoration: underline;
 }
+.adsense {
+	max-width: 970px;
+	height:  90px;
+	border: 1px solid blue;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
 
 .grafico {
 	max-width: 700px;

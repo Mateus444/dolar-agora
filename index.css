@@ -87,7 +87,7 @@ body {
 }
 
 .input-area {
-	max-width: 600px;
+	width: 700px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -127,7 +127,6 @@ body {
 	font-family: 'Oswald', sans-serif;;
 	color: #F54B64;
 }
-
 
 #input-1, #input-2 {
 	width: 100%;

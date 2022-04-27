@@ -75,13 +75,21 @@ body {
 	font-family: inter;
 	text-decoration: underline;
 }
+
 .adsense {
 	max-width: 970px;
 	height:  90px;
-	border: 1px solid blue;
+	background-color: #67728b;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 50px;
+}
+
+.adsense-2 {
+	max-width: 970px;
+	height: 250px;
+	background-color: #67728b;
+	margin: auto;
 }
 
 .grafico {
@@ -259,15 +267,6 @@ li {
 	font-family: inter;
 	color: #F54B64;
 	font-size: 20px;
-}
-
-.adsense-2 {
-	max-width: 1200px;
-	height: 300px;
-	border: 1px solid blue;
-	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 /* Chrome, Safari, Edge, Opera */

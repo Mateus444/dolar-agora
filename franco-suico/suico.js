@@ -5,7 +5,6 @@
 		if (this.readyState == 4 && this.status == 200) {
       		let retorno = jsonRetorno.responseText;
       		let retornoParaObject =  JSON.parse(retorno);
-          console.log(retornoParaObject);
       		let cotacao = retornoParaObject.CHFBRL.bid;
       		let varicao = retornoParaObject.CHFBRL.pctChange;
       		let cotacaoFloat = parseFloat(cotacao);

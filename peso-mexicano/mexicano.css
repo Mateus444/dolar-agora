@@ -372,4 +372,13 @@ a:hover {
 		margin-left: 15px;
 	}
 
+	.grafico {
+		padding: 0;
+		padding-top: 10px;
+	}
+
+	.grafico h3 {
+		margin-left: 15px;
+	}
+
 }

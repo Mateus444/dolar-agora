@@ -1,12 +1,12 @@
 	let jsonRetorno = new XMLHttpRequest();
-	let url = "https://economia.awesomeapi.com.br/json/last/USD-BRLT";
+	let url = "https://economia.awesomeapi.com.br/json/last/RUB-BRL";
 
 	jsonRetorno.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
       		let retorno = jsonRetorno.responseText;
       		let retornoParaObject =  JSON.parse(retorno);
-      		let cotacao = retornoParaObject.USDBRLT.bid;
-      		let varicao = retornoParaObject.USDBRLT.pctChange;
+      		let cotacao = retornoParaObject.RUBBRL.bid;
+      		let varicao = retornoParaObject.RUBBRL.pctChange;
       		let cotacaoFloat = parseFloat(cotacao);
       		var varicaoFloat = parseFloat(varicao);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);

@@ -76,6 +76,7 @@ body {
 	text-decoration: underline;
 }
 
+
 .adsense {
 	max-width: 970px;
 	height:  90px;
@@ -92,6 +93,7 @@ body {
 	margin: auto;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .grafico {
 	max-width: 700px;
@@ -112,6 +114,8 @@ body {
 =======
 >>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
 
+=======
+>>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 .input-area {
 	max-width: 600px;
 	margin: auto;
@@ -273,7 +277,10 @@ li {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 .grafico {
 	max-width: 700px;
 	margin: auto;
@@ -291,7 +298,10 @@ li {
 	color: #DCDCDC;
 }
 
+<<<<<<< HEAD
 >>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
+=======
+>>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -395,6 +405,9 @@ a:hover {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 	.grafico {
 		padding: 0;
 		padding-top: 10px;
@@ -403,7 +416,11 @@ a:hover {
 	.grafico h3 {
 		margin-left: 15px;
 	}
+
 }
+<<<<<<< HEAD
 =======
 }
 >>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
+=======
+>>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492

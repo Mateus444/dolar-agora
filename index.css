@@ -76,7 +76,6 @@ body {
 	text-decoration: underline;
 }
 
-
 .adsense {
 	max-width: 970px;
 	height:  90px;
@@ -93,29 +92,7 @@ body {
 	margin: auto;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.grafico {
-	max-width: 700px;
-	margin: auto;
-	margin-top: 120px;
-	margin-bottom: 50px;
-	padding: 15px;
-	border-radius: 15px;
-	background-color: #2E3648;
-	box-shadow: 0px 0px 15px black;
 
-}
-
-.grafico h3 {
-	font-family: inter;
-	color: #DCDCDC;
-}
-=======
->>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
-
-=======
->>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 .input-area {
 	max-width: 600px;
 	margin: auto;
@@ -276,11 +253,6 @@ li {
 	font-size: 20px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 .grafico {
 	max-width: 700px;
 	margin: auto;
@@ -298,10 +270,6 @@ li {
 	color: #DCDCDC;
 }
 
-<<<<<<< HEAD
->>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
-=======
->>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -404,10 +372,6 @@ a:hover {
 		margin-left: 15px;
 	}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492
 	.grafico {
 		padding: 0;
 		padding-top: 10px;
@@ -418,9 +382,3 @@ a:hover {
 	}
 
 }
-<<<<<<< HEAD
-=======
-}
->>>>>>> c418dd669cef566ea2ff5f2082b4282780271169
-=======
->>>>>>> 0b4ea29c2ae43fc859c9ef7547dfde67d6658492

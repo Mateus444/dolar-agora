@@ -117,7 +117,7 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	color: white;
-	font-family: 'Oswald', sans-serif;;
+	font-family: 'Oswald', sans-serif;
 	color: #F54B64;
 }
 
@@ -144,6 +144,7 @@ h1, h2, h3 {
   font-weight: normal;
   margin-left: 3px;
   margin-right: 3px;
+  font-family: inter;
 }
 
 #cotAtual {
@@ -176,6 +177,7 @@ td,th {
   padding-right: 25px;
   width: 100%;
   padding: 12px;
+  font-family: inter;
   
 }
 #table-header {

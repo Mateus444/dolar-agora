@@ -6,11 +6,12 @@
       		let retorno = jsonRetorno.responseText;
       		let retornoParaObject =  JSON.parse(retorno);
       		let cotacao = retornoParaObject.ticker.buy;
-      		let cotacaoFloat = parseFloat(cotacao);
+      		var cotacaoFloat = parseFloat(cotacao);
           let abertura = retornoParaObject.ticker.open;
           let aberturaFloat = parseFloat(abertura);
           let alta = retornoParaObject.ticker.high;
           let altaFloat = parseFloat(alta);
+		         document.getElementById("cotAtual").innerHTML = cotacaoFloat.toFixed(2);
           let baixa = retornoParaObject.ticker.low;
           let baixaFloat = parseFloat(baixa);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);
@@ -42,8 +43,24 @@
   				let result = input2Float / cotacaoFloat;
   				input1.value = result.toFixed(2);
   			});
-  		}
-  		
+  		} 
+	  
+  		function criarTabela() {
+	    let multi = [2,10,20,30,50,100,1000,1500];
+	    let tbody = document.getElementById("tbody");
+	    tbody.innerText = "";
+	    for (let i = 0; i < 8; i++) {
+	      let tr = tbody.insertRow();
+	      let td_cotacao = tr.insertCell();
+	      let td_real = tr.insertCell();
+	    
+	      td_cotacao.innerText = "LTC"+" "+multi[i];
+	      let conversao = multi[i] * cotacaoFloat;
+	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+	    }
+	  }
+	  
+	  criarTabela();
 	}
 
 	jsonRetorno.open("GET", url, true);

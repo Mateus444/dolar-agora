@@ -16,7 +16,7 @@ body {
 
 .header {
 	width: 100%;
-	height:  120px;
+	height:  70px;
 	background-color: #2E3648;
 	display: flex;
 	flex-direction: inline;
@@ -30,31 +30,14 @@ body {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 25px;
+	padding-left: 10px;
 	cursor: pointer;
-
+  border: 1px so
 }
 
-.moeda-simbolo {
-	width: 85px;
-	height: 85px;
-	border-radius: 50%;
-	background-color: #429A55;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.moeda-simbolo img {
-	width: 100%;
-	height: 100%;
-}
-.site-nome h2{
-	margin-left: 10px;
-	font-family: 'Josefin Sans', sans-serif;;
-	font-weight: bold;
-	font-size: 30px;
-	color: #F54B64;
+.icone img {
+  width: 140px;
+  heigth: 140px
 }
 
 .sobre {
@@ -69,37 +52,40 @@ body {
 }
 
 .sobre a {
-	font-size: 20px;
+	font-size: 15px;
 	color: #F54B64;
 	text-decoration: #F54B64;
 	font-family: inter;
 	text-decoration: underline;
 }
 
-
 .adsense {
-	max-width: 970px;
+	max-width: 728px;
 	height:  90px;
-	background-color: #67728b;
+	background-color: #596277;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 50px;
 }
 
 .adsense-2 {
-	max-width: 970px;
-	height: 250px;
-	background-color: #67728b;
+	max-width: 728px;
+	height: 300px;
+	background-color: #596277;
 	margin: auto;
 }
+
 
 .input-area {
 	max-width: 600px;
 	margin: auto;
+ margin-top: 20px; 
+  margin-bottom: 150px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-bottom: 10px;
+ border-radius: 15px;  
 	background-color: #2E3648;
 	box-shadow: 0px 0px 15px black;
 	
@@ -151,10 +137,67 @@ body {
 	background-color: #2E3648;
 }
 
+h1, h2, h3 {
+  text-align: center; 
+  color: #D3D3D3;
+  line-height: 1.5;
+  font-weight: normal;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#cotAtual {
+  color: #00FF7F;
+}
+
+section {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  background-color: #2E3648;
+  padding: 10px;
+  border-radius: 15px;
+  	box-shadow: 0px 0px 15px black;
+}
+table {              
+  border: 1px solid #4E586E;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #4e586f;
+} 
+td,th {
+  color: #DCDCDC;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  padding: 12px;
+  
+}
+#table-header {
+  height: 40px;
+  font-size: 25px;
+  background-color: #F54B64;
+}
+
+#table-header th {
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #464f64;
+}
 #menu {
 	width: 35px;
 	height: 30px;
 	margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
 	margin-bottom: 8px;
 	background-image: url("imagens/menu-aberto.png");
 	background-size: 100%;
@@ -297,6 +340,10 @@ footer {
 	padding-top: 10px;
 }
 
+#contato {
+  border: 1px solid black;
+}
+
 footer a {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #DCDCDC;
@@ -304,6 +351,7 @@ footer a {
 	padding-bottom: 10px;
 	text-align: center;
 	line-height: 1.5;
+ text-decoration: none;  
 }
 
 a {
@@ -336,9 +384,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-	.header {
-		height: 110px;
-	}
 	.site-nome h2 {
 		font-size: 25px;
 	}

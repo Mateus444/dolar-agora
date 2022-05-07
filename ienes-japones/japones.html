@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Converter Iene japonês para Real brasileiro.">
+	<meta name="description" content="Converter iene japonês para Real brasileiro.">
 	<meta name="author" content="Mateus Gustavo">
-	<meta name="keywords" content="Iene japonês, valor da Iene japonês, cotação, Converter, Ferramenta, online, preço do iene, preço, iene cotação, iene, brasileiro, quanto vale, hoje, Agora, moeda do japão">
+	<meta name="keywords" content="Iene, japonês Cotação, hoje, preço, agora, moeda, japão, converter, conversor, real, brasileiro">
 	<meta name="robots" content="index, nofolow">
-	<title>COTAÇÂO Iene japonês</title>
+	<title>COTAÇÂO DO IENE JAPONÊS</title>
 	<link href="japones.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="imagens/yuan.png">
+	<link rel="icon" type="image/x-icon" href="imagens/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -25,23 +25,19 @@
 
 	<div class="container-principal">
 		<header class="header">
+		  <div id="menu" onclick="chamarMenu()">
+			
+		</div>
 			<div class="icone" onclick="inicio()">
-				<div class="moeda-simbolo">
-					<img src="imagens/dolar-icon.png" alt="Simbolo do dolar">
-				</div>
-				<div class="site-nome">
-					<h2>DÓLAR<br>AGORA</h2>
-				</div>
+			  <img src="imagens/site-icone.png" alt="Icone do site">
 			</div>
 			
 			<div class="sobre">
-				<a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
+				<a href="sobre.html" target="_blank">Sobre</a>
 			</div>
 				
 		</header>
-		<div id="menu" onclick="chamarMenu()">
-			
-		</div>
+	 <nav>
 		<ul id="opcoes">
 				<li><a href="https://mateus444.github.io/dolar-agora/index.html">Dólar Americano</a></li>
 				<li><a href="https://mateus444.github.io/dolar-agora/rublo/rublo.html">Rublo Russo</a></li>
@@ -60,21 +56,25 @@
 				<li><a href="https://mateus444.github.io/dolar-agora/yual-chines/chines.html">Yuan Chinês</a></li>
 				<li><a href="https://mateus444.github.io/dolar-agora/ienes-japones/japones.html">Iene Japonês</a></li>
 				<li><a href="https://mateus444.github.io/dolar-agora/litecoin/litecoin.html">Litecoin</a></li>
-			</ul>
+		</ul>
+	</nav>
 
 		<div class="adsense">
 			
 		</div>
+	  <h1>Converter iene para real</h1>
+	  <h2>Cotação do iene - R$ <strong id="cotAtual">0</strong></h2>
+		
 		<div class="input-area">
 			<div class="moeda-icon">
 				<div class="moeda">
-					<img src="imagens/yuan.png">
+					<img src="imagens/yuan.png" alt="icone do iene">
 				</div>
 				<h3 id="moeda-nome">Iene japonês</h3>
 			</div>
 			<div class="conversor">
-			<div id="input-1">	
-				<span id="moeda-cod1">¥ </span>
+			<div id="input-1">	    
+				<span id="moeda-cod1">¥</span>
 				<input id="entrada-1" type="number" value="1.00">
 			</div>
 	
@@ -88,14 +88,30 @@
 				<span id="variaValor">0.00</span><span id="porcent">%</span>
 			</div>
 		</div>
-
+	  
+	  <h3>Tabela de conversão do iene</h3>
+	  <section>
+	    <table>
+	    <tr id="table-header">
+	      <th>Dólar</th>
+	      <th>Real</th>
+	    </tr>
+	      <tbody id="tbody">
+	      </tbody>
+	  </table>
+	    
+	  </section>
+	  
+	<div class="adsense-2">
+			
+		</div>
 		<div class="grafico">
-			<h3>Gráfico últimos 30 dias</h3>
+			<h3>Gráfico dos últimos 30 dias</h3>
 			<canvas id="myChart"></canvas>
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script>
-			var url30 = "https://economia.awesomeapi.com.br/json/daily/JPY-BRL/30";
+			var url30 = "https://economia.awesomeapi.com.br/json/daily/CNY-BRL/30";
 			var xhttp = new XMLHttpRequest();
 
 			xhttp.onreadystatechange = function() {
@@ -106,11 +122,12 @@
 			       	//pegar e formatar as cotações
 			       	var cotacoes = [];
 			       	var cotacoesParaFloat = [];
-			       	var cotacoesForamatadas = [];
+			       	var cotacoesFormatadas = [];
+		    	  
 			       	for (let i = 0; i < 30; i++) {
 			       		cotacoes[i] = retornoParaObj[i].bid;
 			       		cotacoesParaFloat[i] = parseFloat(cotacoes[i]);
-			       		cotacoesForamatadas[i] = cotacoesParaFloat[i].toFixed(2);
+			       		cotacoesFormatadas[i] = cotacoesParaFloat[i].toFixed(2);
 			       	}
 
 			       	//pegar a data de cada cotação em milisegungos e formatar
@@ -138,7 +155,7 @@
 			       	}
 
 			       	periodos.reverse();
-			       	cotacoesForamatadas.reverse();
+			       	cotacoesFormatadas.reverse();
 
 			       	//Desenha o grafico na tela
 			       	var ctx = document.getElementById('myChart');
@@ -149,14 +166,20 @@
 						data: {
 							labels: periodos,
 							datasets: [{
-								color: 'blue',
-								pointRadius: 0,
 								label: "Cotação",
-								data: cotacoesForamatadas,
+							 pointRadius: 0,
+								data: cotacoesFormatadas,
 								borderWidth: 4,
 								borderColor: "#F54B64",
 							}]
 						},
+		  options: {
+        interaction: {
+        intersect: false,
+        mode: 'index',
+       },
+    }
+			       	
 		       	    });
 		        }
 			};
@@ -165,18 +188,14 @@
 			xhttp.send();
 		</script>
 		</div>
-		<div class="adsense-2">
-			
-		</div>
-
+	  
 		<footer>
-			<a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
-			<a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" target="_blank" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a>
-			<a href="https://www.flaticon.com/br/icones-gratis/dolar" target="_blank" title="dólar ícones">Dólar ícones criados por kliwir art - Flaticon</a>
-			<a href="https://www.flaticon.com/br/icones-gratis/dolar-de-hong-kong" title="dólar de hong kong ícones">Dólar de hong kong ícones criados por Triberion - Flaticon</a>
-			<a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
+			  <a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
+			  <a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" target="_blank" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a>
+			  <a href="https://www.flaticon.com/br/icones-gratis/yuan" title="yuan ícones">Yuan ícones criados por Freepik - Flaticon</a>
+			  <a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
 		</footer>
-
+	</div>
 		<script>
 		let input1 = document.getElementById("entrada-1");
 		let input1Fundo = document.getElementById("input-1");
@@ -215,7 +234,6 @@
 				document.getElementById("opcoes").style.display = "none";
 			}
 		}
-
 	</script>
 	<script>
 		function inicio() {

@@ -12,6 +12,7 @@
           let alta = retornoParaObject.ticker.high;
           let altaFloat = parseFloat(alta);
 		         document.getElementById("cotAtual").innerHTML = cotacaoFloat.toFixed(2);
+		         document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
           let baixa = retornoParaObject.ticker.low;
           let baixaFloat = parseFloat(baixa);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);

@@ -14,6 +14,7 @@
           let baixa = retornoParaObject.ticker.low;
           let baixaFloat = parseFloat(baixa);
           document.getElementById("cotAtual").innerHTML = cotacaoFloat.toFixed(2);
+          document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
           document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);
 
           document.getElementById('abertura').innerHTML = aberturaFloat.toFixed(2);

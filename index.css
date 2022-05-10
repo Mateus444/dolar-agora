@@ -73,6 +73,8 @@ body {
 	height: 300px;
 	background-color: #596277;
 	margin: auto;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 
@@ -193,6 +195,37 @@ td,th {
 
 tr:nth-child(even) {
   background-color: #464f64;
+}
+
+main {
+  margin: auto;
+  max-width: 600px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 15px;  
+	background-color: #2E3648;
+	box-shadow: 0px 0px 15px black;
+}
+
+main h3 {
+  text-align: left; 
+  color: #f5f0f0;
+  margin-top: 15px;
+  font-family: inter;
+  margin-bottom: 15px;
+  font-weight: normal;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-family: inter;
+  font-size: 22px;
+  font-weight: normal;
+}
+main p {
+  color: #D3D3D3;
+  line-height: 1.5;
+  font-family: inter;
+  font-weight: normal;
 }
 #menu {
 	width: 35px;

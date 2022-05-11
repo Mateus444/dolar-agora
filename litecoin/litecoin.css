@@ -68,15 +68,13 @@ body {
 	margin-bottom: 50px;
 }
 
-
 .adsense-2 {
 	max-width: 728px;
-	height: 300px;
-	background-color: #596277;
 	margin: auto;
   margin-top: 25px;
   margin-bottom: 35px;
 }
+
 
 .input-area {
 	max-width: 600px;
@@ -119,7 +117,7 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	color: white;
-	font-family: 'Oswald', sans-serif;;
+	font-family: 'Oswald', sans-serif;
 	color: #F54B64;
 }
 
@@ -179,6 +177,7 @@ td,th {
   padding-right: 25px;
   width: 100%;
   padding: 12px;
+  font-family: inter;
   
 }
 #table-header {
@@ -211,18 +210,21 @@ main h3 {
   text-align: left; 
   color: #f5f0f0;
   margin-top: 15px;
+  font-family: inter;
   margin-bottom: 15px;
   font-weight: normal;
   margin-left: 3px;
   margin-right: 3px;
   font-family: inter;
   font-size: 22px;
+  font-weight: normal;
 }
 main p {
   color: #D3D3D3;
   line-height: 1.5;
+  font-family: inter;
+  font-weight: normal;
 }
-
 #menu {
 	width: 35px;
 	height: 30px;
@@ -458,63 +460,3 @@ a:hover {
 	}
 
 }
-
-.conteudo {
-	width: 85%;
-	margin: auto;
-	background-color: #2E3648;
-	padding: 15px;
-}
-
-.conteudo h5 {
-	color: #F54B64;
-	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	margin-bottom: 15px;
-	margin-top: 15px;
-}
-
-#ult24 {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #DCDCDC;
-	font-weight: 450;
-	line-height: 1.5;
-}
-
-.conteudo span {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #DCDCDC;
-	font-weight: 450;
-	line-height: 1.5;
-}
-
-.variacao {
-	width: 85%;
-	height: 30px;
-	display: flex;
-	flex-direction: inline;
-	padding-left: 15px;
-	align-items: center;
-}
-
-#varia {
-	font-family: inter;
-	font-size: 20px;
-	color: #D3D3D3;
-	font-weight: normal;
-	margin-right: 15px;
-}
-
-#porcent {
-	font-family: inter;
-	color: #DCDCDC;
-	font-size: 20px;
-}
-
-#variaValor {
-	font-family: inter;
-	color: #F54B64;
-	font-size: 20px;
-}
-

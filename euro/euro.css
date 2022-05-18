@@ -137,7 +137,7 @@ body {
 	background-color: #2E3648;
 }
 
-h1, h2, h3 {
+h1, #cotacao, h3 {
   text-align: center; 
   color: #D3D3D3;
   line-height: 1.5;
@@ -224,7 +224,6 @@ main p {
   line-height: 1.5;
   font-family: inter;
   font-weight: normal;
-  word-wrap: break-word;
 }
 #menu {
 	width: 35px;
@@ -423,6 +422,18 @@ a:hover {
 	}
 	.sobre  {
 		display: none;
+	}
+	
+	h1 {
+	  text-align: left;
+	  font-size: 22px;
+	  margin-left: 15px;
+	}
+	
+	#cotacao {
+	  font-size: 15px;
+	  text-align: left;
+	  margin-left: 15px;
 	}
 
 	.icone {

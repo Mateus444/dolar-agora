@@ -122,6 +122,37 @@ body {
 }
 
 
+.conteudo {
+	width: 85%;
+	margin: auto;
+	background-color: #2E3648;
+	padding: 15px;
+}
+
+.conteudo h5 {
+	color: #F54B64;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#ult24 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #DCDCDC;
+	font-weight: 450;
+	line-height: 1.5;
+}
+
+.conteudo span {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #DCDCDC;
+	font-weight: 450;
+	line-height: 1.5;
+}
+
+
 #input-1, #input-2 {
 	width: 100%;
 	height: 60px;
@@ -423,6 +454,17 @@ a:hover {
 	.sobre  {
 		display: none;
 	}
+ 	h1 {
+	  text-align: left;
+	  font-size: 22px;
+	  margin-left: 15px;
+	}
+	
+	#cotacao {
+	  font-size: 15px;
+	  text-align: left;
+	  margin-left: 15px;
+	} 
 
 	.icone {
 		width: 100%;

@@ -436,7 +436,18 @@ a:hover {
 		overflow: auto;
 		width: 70%;
 	}
-
+  
+	h1 {
+	  text-align: left;
+	  font-size: 22px;
+	  margin-left: 15px;
+	}
+	
+	#cotacao {
+	  font-size: 15px;
+	  text-align: left;
+	  margin-left: 15px;
+	} 
 	#opcoes li {
 		margin-bottom: 20px;
 		font-size: 20px;

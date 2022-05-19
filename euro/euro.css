@@ -224,6 +224,8 @@ main p {
   line-height: 1.5;
   font-family: inter;
   font-weight: normal;
+word-break: break-word;
+
 }
 #menu {
 	width: 35px;

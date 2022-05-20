@@ -24,6 +24,19 @@
           document.getElementById('baixa').innerHTML = baixaFloat.toFixed(2);
           document.getElementById('baixa').style.color = "#ff3e31";
 
+                         function mostrarData() {
+		               let data = retornoParaObject.ticker.date;
+		               let novaData = new Date(data * 1000);
+		               let horas = novaData.getHours();
+		               let minutos = novaData.getMinutes();
+		               let segundos = ("0"+novaData.getSeconds()).slice(-2);
+		               let dia = ("0"+novaData.getDate()).slice(-2);
+		               let mes = ("0"+(novaData.getMonth() + 1)).slice(-2);
+		               let ano = novaData.getFullYear();
+		               document.getElementById("data").innerHTML = dia+"-"+mes+"-"+ano + " " + horas+":"+minutos+":"+segundos;
+		          }
+		          
+		          mostrarData();
   			let input1 = document.getElementById('entrada-1');
   			let input2 = document.getElementById('entrada-2');
 

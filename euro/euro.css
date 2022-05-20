@@ -90,6 +90,18 @@ body {
 	box-shadow: 0px 0px 15px black;
 	
 }
+
+.data-area {
+  width: 90%;
+  height: 20px;
+}
+
+#data {
+  font-family: inter;
+  color: #D3D3D3;
+  font-weight: normal;
+  font-size: 12px;
+}
 .moeda-icon {
 	width: 100%;
 	height: 90px;
@@ -224,8 +236,6 @@ main p {
   line-height: 1.5;
   font-family: inter;
   font-weight: normal;
-word-break: break-word;
-
 }
 #menu {
 	width: 35px;

@@ -10,6 +10,8 @@
       		var cotacaoFloat = parseFloat(cotacao);
       		var varicaoFloat = parseFloat(varicao);
 		      document.getElementById("cotAtual").innerHTML = cotacaoFloat.toFixed(2);
+                 let data = retornoParaObject.CNYBRL.create_date;
+                 document.getElementById("data").innerHTML = data;
 		  
 		      document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);

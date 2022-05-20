@@ -13,6 +13,8 @@
 		      document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);
       		document.getElementById("variaValor").innerHTML = varicaoFloat;
+                 let data = retornoParaObject.AUDBRL.create_date;
+                 document.getElementById("data").innerHTML = data;
 
           if (varicaoFloat > 0) {
             document.getElementById("variaValor").style.color = "#00FF7F";

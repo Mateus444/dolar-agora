@@ -27,8 +27,8 @@
                          function mostrarData() {
 		               let data = retornoParaObject.ticker.date;
 		               let novaData = new Date(data * 1000);
-		               let horas = novaData.getHours();
-		               let minutos = novaData.getMinutes();
+		               let horas = ("0"+novaData.getHours()).slice(-2);
+		               let minutos = ("0"+novaData.getMinutes()).slice(-2);
 		               let segundos = ("0"+novaData.getSeconds()).slice(-2);
 		               let dia = ("0"+novaData.getDate()).slice(-2);
 		               let mes = ("0"+(novaData.getMonth() + 1)).slice(-2);

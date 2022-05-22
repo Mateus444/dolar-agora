@@ -174,7 +174,7 @@ margin-bottom: 35px;
 			       	var ano = [];
 			       	for (let i = 0; i < 30; i++) {
 			       		dias[i] = ("0"+datas[i].getDate()).slice(-2);
-			       		meses[i] = ("0"+datas[i].getMonth()).slice(-2);
+			       	        meses[i] = ("0"+(datas[i].getMonth()+1)).slice(-2);
 			       		ano[i] = datas[i].getFullYear();
 			       	}
 
@@ -241,7 +241,7 @@ margin-bottom: 35px;
 	  </main>
 		<footer>
 			  <a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
-  	  <a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Política de Privacidade</a>
+  	  <a href="https://mateus444.github.io/dolar-agora/politicas.html" target="_blank">Política de Privacidade</a>
 			  <a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
 		</footer>
 	</div>

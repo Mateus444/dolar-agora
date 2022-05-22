@@ -173,7 +173,7 @@ margin-bottom: 35px;
 			       	var ano = [];
 			       	for (let i = 0; i < 30; i++) {
 			       		dias[i] = ("0"+datas[i].getDate()).slice(-2);
-			       		meses[i] = ("0"+datas[i].getMonth()).slice(-2);
+			       	        meses[i] = ("0"+(datas[i].getMonth()+1)).slice(-2);
 			       		ano[i] = datas[i].getFullYear();
 			       	}
 

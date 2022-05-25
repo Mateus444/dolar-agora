@@ -13,15 +13,15 @@
           let altaFloat = parseFloat(alta);
           let baixa = retornoParaObject.ticker.low;
           let baixaFloat = parseFloat(baixa);
-          document.getElementById("cotAtual").innerHTML = cotacaoFloat.toFixed(2);
-          document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
+          document.getElementById("cotAtual").innerHTML = cotacaoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+          document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
           document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);
 
-          document.getElementById('abertura').innerHTML = aberturaFloat.toFixed(2);
+          document.getElementById('abertura').innerHTML = aberturaFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
           document.getElementById('abertura').style.color = 'white';
-          document.getElementById('alta').innerHTML = altaFloat.toFixed(2);
+          document.getElementById('alta').innerHTML = altaFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
           document.getElementById('alta').style.color = "rgb(0, 255, 127)";
-          document.getElementById('baixa').innerHTML = baixaFloat.toFixed(2);
+          document.getElementById('baixa').innerHTML = baixaFloat.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
           document.getElementById('baixa').style.color = "#ff3e31";
 
                          function mostrarData() {

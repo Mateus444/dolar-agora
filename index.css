@@ -95,6 +95,7 @@ body {
 .redes-sociais {
   margin: auto;
   max-width: 600px;
+  z-index: -1;
 }
 
 .data-area {

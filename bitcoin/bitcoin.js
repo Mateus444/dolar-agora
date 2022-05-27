@@ -61,10 +61,10 @@
   		} 
 	  
   		function criarTabela() {
-	    let multi = [0.5,2,5,10,15,20,50,100];
+	    let multi = [0.5,0.25,2,5,10,15,20,25,30,40,50,100];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
-	    for (let i = 0; i < 8; i++) {
+	    for (let i = 0; i < 12; i++) {
 	      let tr = tbody.insertRow();
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();

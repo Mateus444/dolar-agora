@@ -59,10 +59,10 @@
         });
       } 
        	  function criarTabela() {
-	    let multi = [0.5,1,2,5,10,25,50,100];
+	    let multi = [0.5,1,2,5,10,15,25,30,40,100,125,150];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
-	    for (let i = 0; i < 8; i++) {
+	    for (let i = 0; i < 12; i++) {
 	      let tr = tbody.insertRow();
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();

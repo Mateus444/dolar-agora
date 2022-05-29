@@ -242,7 +242,6 @@ main p {
   line-height: 1.5;
   font-family: inter;
   font-weight: normal;
-word-wrap: break-word;
 }
 #menu {
 	width: 35px;
@@ -277,7 +276,7 @@ word-wrap: break-word;
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
-	 padding-bottom: 5px;
+  margin-left: 4px;
 }
 
 #opcoes a:hover {
@@ -290,11 +289,26 @@ li {
     color: #DCDCDC;
     font-weight: normal;
     font-size: 15px;
-    margin-left: 17px;
+    margin-left: 12px;
     margin-bottom: 5px;
     list-style-type: none;
+  display: flex;
+  flex-direction: inline;
+  align-items: center;
 }
 
+.band-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.band-icon img {
+  width: 100%;
+  height: 100%;
+}
 
 #moeda-cod1, #moeda-cod2 {
 	color: white;
@@ -474,7 +488,7 @@ a:hover {
 
 	#opcoes li {
 		margin-bottom: 20px;
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	#menu {

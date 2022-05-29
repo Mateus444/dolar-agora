@@ -59,28 +59,30 @@ body {
 	text-decoration: underline;
 }
 
+
 .adsense {
 	max-width: 728px;
-	height:  90px;
-	background-color: #596277;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .adsense-2 {
 	max-width: 728px;
 	margin: auto;
-  margin-top: 25px;
-  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-
 
 .input-area {
 	max-width: 600px;
 	margin: auto;
  margin-top: 20px; 
-  margin-bottom: 150px;
+  margin-bottom: 18px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -89,6 +91,11 @@ body {
 	background-color: #2E3648;
 	box-shadow: 0px 0px 15px black;
 	
+}
+
+.redes-sociais {
+  margin: auto;
+  max-width: 600px;
 }
 
 .data-area {
@@ -302,7 +309,7 @@ main p {
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
-	 padding-bottom: 5px;
+margin-left: 4px;
 }
 
 #opcoes a:hover {
@@ -315,11 +322,26 @@ li {
     color: #DCDCDC;
     font-weight: normal;
     font-size: 15px;
-    margin-left: 17px;
+    margin-left: 12px;
     margin-bottom: 5px;
     list-style-type: none;
+  display: flex;
+  flex-direction: inline;
+  align-items: center;
 }
 
+.band-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.band-icon img {
+  width: 100%;
+  height: 100%;
+}
 
 #moeda-cod1, #moeda-cod2 {
 	color: white;

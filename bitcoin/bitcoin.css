@@ -309,7 +309,7 @@ main p {
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
-	 padding-bottom: 5px;
+margin-left: 4px;
 }
 
 #opcoes a:hover {

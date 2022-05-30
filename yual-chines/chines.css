@@ -64,15 +64,15 @@ body {
 	height:  90px;
 	background-color: #596277;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .adsense-2 {
 	max-width: 728px;
 	margin: auto;
   margin-top: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 
@@ -80,7 +80,7 @@ body {
 	max-width: 600px;
 	margin: auto;
  margin-top: 20px; 
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -90,7 +90,10 @@ body {
 	box-shadow: 0px 0px 15px black;
 	
 }
-
+.redes-sociais {
+  margin: auto;
+  max-width: 600px;
+}
 .data-area {
   width: 90%;
   height: 20px;
@@ -166,7 +169,7 @@ h1, #cotacao, h3 {
 section {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 40px;
+  
   max-width: 600px;
   background-color: #2E3648;
   padding: 10px;
@@ -253,6 +256,7 @@ main p {
 	background-image: url("imagens/menu-aberto2.png");
 }
 
+
 #opcoes {
 	background-color: #2E3648;
 	max-width: 200px;
@@ -261,12 +265,23 @@ main p {
 	padding-top: 8px;
 	box-shadow: 0px 0px 15px black;
 	position: absolute;
-	z-index: 0;
+	z-index: 2;
 	border-radius: 10px;
 	margin-left: 20px;
 	display: none;
 }
+.band-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.band-icon img {
+  width: 100%;
+  height: 100%;
+}
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
@@ -283,11 +298,13 @@ li {
     color: #DCDCDC;
     font-weight: normal;
     font-size: 15px;
-    margin-left: 17px;
+    margin-left: 12px;
     margin-bottom: 5px;
     list-style-type: none;
+  display: flex;
+  flex-direction: inline;
+  align-items: center;
 }
-
 
 #moeda-cod1, #moeda-cod2 {
 	color: white;
@@ -344,8 +361,8 @@ li {
 .grafico {
 	max-width: 700px;
 	margin: auto;
-	margin-top: 120px;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	padding: 15px;
 	border-radius: 15px;
 	background-color: #2E3648;

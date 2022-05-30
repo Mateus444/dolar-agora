@@ -80,7 +80,7 @@ body {
 	max-width: 600px;
 	margin: auto;
  margin-top: 20px; 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -285,7 +285,7 @@ main p {
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
-	 padding-bottom: 5px;
+        margin-left: 4px;
 }
 
 #opcoes a:hover {
@@ -480,11 +480,6 @@ a:hover {
 		height: 600px;
 		overflow: auto;
 		width: 70%;
-	}
-
-	#opcoes li {
-		margin-bottom: 20px;
-		font-size: 20px;
 	}
 
 	#menu {

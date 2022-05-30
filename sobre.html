@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SOBRE</title>
-	<link href="sobre.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SOBRE</title>
+        <link href="sobre.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="imagens/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-principal">
+            <header class="header">
+                <div id="menu" onclick="chamarMenu()"></div>
+                <div class="icone" onclick="inicio()">
+                    <img src="imagens/site-icone.png" alt="Icone do site" />
+                </div>
+            </header>
 
-	<div class="container-principal">
-		<header class="header">
-			<div id="menu" onclick="chamarMenu()">
-			
-		</div>
-			<div class="icone" onclick="inicio()">
-			  <img src="imagens/site-icone.png" alt="Icone do site">
-			</div>
-		</header>
+            <main class="sobre-info">
+                <h4>Sobre o Dólar Agora</h4>
+                <p>O <strong>dolaragora.online</strong> é um conversor de moedas para você ficar atualizado sobre a cotação atual das principais moedas, e realizar a conversão para real brasileiro de forma simples e rápida.</p>
 
-		
-		<main class="sobre-info">
-			<h4>Sobre o Dólar Agora</h4>
-		  <p>O <strong>dolaragora.online</strong> é um conversor de moedas para você ficar atualizado sobre a cotação atual das principais moedas, e realizar a conversão para real brasileiro de forma simples e rápida.</p>
-			</p>
-	  <h4>Observação</h4>
-	  <p>O <strong>dolaragora.online</strong> é um site de caráter informativo, não use esse site como fonte antes de realizar alguma transação! Para isso consulte alguma fonte especializada!</p>
-			<h4>Lista de moedas</h4>
-			<ul>
-				<li><a href="https://mateus444.github.io/dolar-agora/index.html">Dólar Americano</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/dolar-canadense/canadense.html">Dólar Canadense</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/dolar-australiano/australiano.html">Dólar Australiano</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/bitcoin/bitcoin.html">Bitcoin</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/peso-argentino/argentino.html">Peso Argentino</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/ethereum/ethereum.html">Ethereum</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/euro/euro.html">Euro</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/dogecoin/dogecoin.html">Dogecoin</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/libra/libra.html">Libra Esterlina</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/dolar-hongkong/hongkong.html">Dólar de Hong Kong</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/peso-mexicano/mexicano.html">Peso Mexicano</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/dolar-taiuanes/taiuanes.html">Dólar Taiuanês</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/franco-suico/suico.html">Franco Suíço</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/yual-chines/chines.html">Yuan Chinês</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/ienes-japones/japones.html">Iene Japonês</a></li>
-				<li><a href="https://mateus444.github.io/dolar-agora/litecoin/litecoin.html">Litecoin</a></li>
-			</ul>
-		  <h4>Ícones usados nesse site</h4>
-		  <ul>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar" title="dólar ícones">Dólar ícones criados por kliwir art - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dinheiro" title="dinheiro ícones">Dinheiro ícones criados por kosonicon - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-canadense" title="dólar canadense ícones">Dólar canadense ícones criados por Freepik - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-australiano" title="dólar australiano ícones">Dólar australiano ícones criados por HAJICON - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/bitcoin" title="bitcoin ícones">Bitcoin ícones criados por adriansyah - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Freepik - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/ethereum" title="ethereum ícones">Ethereum ícones criados por Blak1ta - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/euro" title="euro ícones">Euro ícones criados por Freepik - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dogecoin" title="dogecoin ícones">Dogecoin ícones criados por Pixelmeetup - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/libra" title="libra ícones">Libra ícones criados por kosonicon - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-de-hong-kong" title="dólar de hong kong ícones">Dólar de hong kong ícones criados por Ahmer - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/novo-dolar-taiwan" title="novo dólar taiwan ícones">Novo dólar taiwan ícones criados por Freepik - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Pixelmeetup - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/yuan" title="yuan ícones">Yuan ícones criados por Freepik - Flaticon</a></li>
-		    <li><a href="https://www.flaticon.com/br/icones-gratis/litecoin" title="litecoin ícones">Litecoin ícones criados por Freepik - Flaticon</a></li>
-		  </ul>
-		</main>
-	<footer>
-			  <a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
-  	  <a href="https://mateus444.github.io/dolar-agora/politicas.html" target="_blank">Política de Privacidade</a>
-			  <a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
-		</footer>
-	
-	</div>
+                <h4>Observação</h4>
+                <p>O <strong>dolaragora.online</strong> é um site de caráter informativo, não use esse site como fonte antes de realizar alguma transação! Para isso consulte alguma fonte especializada!</p>
+                <h4>Lista de moedas</h4>
+                <ul>
+                    <li><a href="https://mateus444.github.io/dolar-agora/index.html">Dólar Americano</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/dolar-canadense/canadense.html">Dólar Canadense</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/dolar-australiano/australiano.html">Dólar Australiano</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/bitcoin/bitcoin.html">Bitcoin</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/peso-argentino/argentino.html">Peso Argentino</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/ethereum/ethereum.html">Ethereum</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/euro/euro.html">Euro</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/dogecoin/dogecoin.html">Dogecoin</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/libra/libra.html">Libra Esterlina</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/dolar-hongkong/hongkong.html">Dólar de Hong Kong</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/peso-mexicano/mexicano.html">Peso Mexicano</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/dolar-taiuanes/taiuanes.html">Dólar Taiuanês</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/franco-suico/suico.html">Franco Suíço</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/yual-chines/chines.html">Yuan Chinês</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/ienes-japones/japones.html">Iene Japonês</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/litecoin/litecoin.html">Litecoin</a></li>
+                </ul>
+                <h4>Ícones usados nesse site</h4>
+                <ul>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/menu-aberto" title="menu aberto ícones">Menu aberto ícones criados por Ilham Fitrotul Hayat - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar" title="dólar ícones">Dólar ícones criados por kliwir art - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dinheiro" title="dinheiro ícones">Dinheiro ícones criados por kosonicon - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-canadense" title="dólar canadense ícones">Dólar canadense ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-australiano" title="dólar australiano ícones">Dólar australiano ícones criados por HAJICON - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/bitcoin" title="bitcoin ícones">Bitcoin ícones criados por adriansyah - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/ethereum" title="ethereum ícones">Ethereum ícones criados por Blak1ta - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/euro" title="euro ícones">Euro ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dogecoin" title="dogecoin ícones">Dogecoin ícones criados por Pixelmeetup - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/libra" title="libra ícones">Libra ícones criados por kosonicon - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dolar-de-hong-kong" title="dólar de hong kong ícones">Dólar de hong kong ícones criados por Ahmer - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/novo-dolar-taiwan" title="novo dólar taiwan ícones">Novo dólar taiwan ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por Pixelmeetup - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/yuan" title="yuan ícones">Yuan ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/litecoin" title="litecoin ícones">Litecoin ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+                <h4>Bandeiras</h4>
+                <ul>
+                    <li><a href="https://www.flaticon.com/free-icons/flag" title="flag icons">Flag icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/canada" title="canada icons">Canada icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/australia" title="australia icons">Australia icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/argentina" title="argentina icons">Argentina icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/russia" title="russia icons">Russia icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/switzerland" title="switzerland icons">Switzerland icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/mexico" title="mexico icons">Mexico icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/china" title="china icons">China icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/taiwan" title="taiwan icons">Taiwan icons created by Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/japao" title="japão ícones">Japão ícones criados por IconsBox - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/hong-kong" title="hong kong ícones">Hong kong ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/bandeira" title="bandeira ícones">Bandeira ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/bitcoin" title="bitcoin ícones">Bitcoin ícones criados por adriansyah - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/dogecoin" title="dogecoin ícones">Dogecoin ícones criados por Pixelmeetup - Flaticon</a></li>
+                    <li><a href="https://mateus444.github.io/dolar-agora/litecoin/litecoin.html">Litecoin</a></li>
 
-	<script>
-		function inicio() {
-			window.location.href = "index.html";
-		}
-	</script>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/ethereum" title="ethereum ícones">Ethereum ícones criados por Blak1ta - Flaticon</a></li>
+                </ul>
+            </main>
+            <footer>
+                <a href="https://mateus444.github.io/dolar-agora/sobre.html" target="_blank">Sobre</a>
+                <a href="https://mateus444.github.io/dolar-agora/politicas.html" target="_blank">Política de Privacidade</a>
+                <a href="https://www.instagram.com/mateus_gust4vo/" target="_blank">Por @mateus_gust4vo</a>
+            </footer>
+        </div>
 
-</body>
+        <script>
+            function inicio() {
+                window.location.href = "index.html";
+            }
+        </script>
+    </body>
 </html>

@@ -14,7 +14,7 @@
 		      document.getElementById("cotAtual2").innerHTML = cotacaoFloat.toFixed(2);
       		document.getElementById("entrada-2").value = cotacaoFloat.toFixed(2);
       		document.getElementById("variaValor").innerHTML = varicaoFloat;
-                 let data = retornoParaObject.ASRBRL.create_date;
+                 let data = retornoParaObject.ARSBRL.create_date;
                  document.getElementById("data").innerHTML = data;
 
           if (varicaoFloat > 0) {

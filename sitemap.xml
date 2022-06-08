@@ -1,97 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>http://dolaragora.online/</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://dolaragora.online/</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/rublo/rublo.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/rublo/rublo.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/dolar-canadense/canadense.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/dolar-canadense/canadense.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/dolar-australiano/australiano.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
-</url>
-
-<url>
-  <loc>http://dolaragora.online/bitcoin/bitcoin.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/dolar-australiano/australiano.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/peso-argentino/argentino.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/bitcoin/bitcoin.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/ethereum/ethereum.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/peso-argentino/argentino.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/euro/euro.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/ethereum/ethereum.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/dogecoin/dogecoin.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/euro/euro.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/libra/libra.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/dogecoin/dogecoin.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/dolar-hongkong/hongkong.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/libra/libra.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/peso-mexicano/mexicano.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/dolar-hongkong/hongkong.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/dolar-taiuanes/taiuanes.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/peso-mexicano/mexicano.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/franco-suico/suico.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/dolar-taiuanes/taiuanes.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/yual-chines/chines.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/franco-suico/suico.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/ienes-japones/japones.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/yual-chines/chines.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
 <url>
-  <loc>http://dolaragora.online/litecoin/litecoin.html</loc>
-  <lastmod>2022-05-18T03:55:12+00:00</lastmod>
-  <priority>1.0</priority>
+<loc>https://dolaragora.online/ienes-japones/japones.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
 </url>
-
+<url>
+<loc>https://dolaragora.online/litecoin/litecoin.html</loc>
+<lastmod>2022-05-18T03:55:12+00:00</lastmod>
+<priority>1.0</priority>
+</url>
 </urlset>

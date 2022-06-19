@@ -1,0 +1,6 @@
+Sitemap: https://dolaragora.online/sitemap.xml
+
+User-agent: *
+
+Disallow: /politicas.html
+Disallow: /sobre.html

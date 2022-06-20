@@ -42,15 +42,16 @@
   		}
 	  
 	  function criarTabela() {
-	    let multi = [2,10,20,30,50,100,1000,1500];
+let multi = [2,10,20,30,40,50,100,200,300,1000];
+let escrito = ["(Dois yuans)", "(Dez yuans)","(Vinte yuans)", "(Trinta yuans)","(Quarenta yuans)","(Cinquenta yuans)","(Cem yuans)","(Duzentos yuans)","(Trezentos yuans)", "(Mil yuans)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
-	    for (let i = 0; i < 8; i++) {
+	    for (let i = 0; i < 10; i++) {
 	      let tr = tbody.insertRow();
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	                              
-	      td_cotacao.innerText = "¥"+" "+multi[i];
+	      td_cotacao.innerText = "¥"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

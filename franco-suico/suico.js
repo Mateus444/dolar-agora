@@ -42,7 +42,8 @@
   		}
 	  
 	  function criarTabela() {
-	    let multi = [2,10,20,30,50,100,1000,1500];
+	    let multi = [2,10,20,30,40,50,100,200,300,500];
+let escrito = ["(Dois francos)", "(Dez francos)","(Vinte francos)", "(Trinta francos)","(Quarenta francos)","(Cinquenta francos)","(Cem francos)","(Duzentos francos)","(Trezentos francos)", "(Mil francos)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
 	    for (let i = 0; i < 8; i++) {
@@ -50,7 +51,7 @@
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	    
-	      td_cotacao.innerText = "Fr"+" "+multi[i];
+	      td_cotacao.innerText = "Fr"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

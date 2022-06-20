@@ -43,7 +43,7 @@
   		}
 	  
 	  function criarTabela() {
-let multi = [2,10,20,30,40,50,100,200,300,500];
+let multi = [2,10,20,30,40,50,100,200,300,1000];
 let escrito = ["(Dois rublos)", "(Dez rublos)","(Vinte rublos)", "(Trinta rublos)","(Quarenta rublos)","(Cinquenta rublos)","(Cem rublos)","(Duzentos rublos)","(Trezentos rublos)", "(Mil rublos)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";

@@ -50,7 +50,7 @@
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	    
-	      td_cotacao.innerText = "A$"+" "+multi[i];
+	      td_cotacao.innerText = "A$"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

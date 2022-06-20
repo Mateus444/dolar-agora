@@ -61,8 +61,8 @@
   		} 
 	  
   		function criarTabela() {
-              let multi = [0.5,2,10,15,20,25,30,50,70,100];
-              let escrito = ["(Meio bitcoin)", "(Dois bitcoins)","(Dez bitcoins)", "(Quinze bitcoins)","(Vinte bitcoins)","(Trinta bitcoins)","(Cinquenta bitcoins)","(Cem bitcoins)","(Duzentos bitcoins)", "(500 bitcoins)"];
+              let multi = [0.5,2,10,15,20,30,50,100,200,500];
+              let escrito = ["(Meio bitcoin)", "(Dois bitcoins)","(Dez bitcoins)", "(Quinze bitcoins)","(Vinte bitcoins)","(Trinta bitcoins)","(Cinquenta bitcoins)","(Cem bitcoins)","(Duzentos bitcoins)", "(Quinhentos bitcoins)"];
 
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";

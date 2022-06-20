@@ -59,15 +59,16 @@
         });
       } 
        	  function criarTabela() {
-	    let multi = [0.5,1,2,5,10,15,25,30,40,100,125,150];
+            let multi = [0.5,2,10,15,20,30,50,100,200,500];
+              let escrito = ["(Meio Ethereum)", "(Dois Ethereum)","(Dez Ethereum)", "(Quinze Ethereum)","(Vinte Ethereum)","(Trinta Ethereum)","(Cinquenta Ethereum)","(Cem Ethereum)","(Duzentos Ethereum)", "(Quinhentos Ethereum)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
-	    for (let i = 0; i < 12; i++) {
+	    for (let i = 0; i < 10; i++) {
 	      let tr = tbody.insertRow();
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	    
-	      td_cotacao.innerText = "ETH"+" "+multi[i];
+	      td_cotacao.innerText = "ETH"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

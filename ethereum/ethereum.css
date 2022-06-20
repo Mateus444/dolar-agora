@@ -389,7 +389,7 @@ li {
 }
 
 .grafico {
-	max-width: 700px;
+	max-width: 600px;
 	margin: auto;
 	margin-top: 120px;
 	margin-bottom: 50px;
@@ -464,6 +464,10 @@ a:hover {
 		overflow: auto;
 		width: 70%;
 	}
+       yd{
+font-size: 17px;
+font-weight: normal;
+}
 
 	#opcoes li {
 		margin-bottom: 20px;

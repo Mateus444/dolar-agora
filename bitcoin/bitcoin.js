@@ -61,15 +61,17 @@
   		} 
 	  
   		function criarTabela() {
-	    let multi = [0.5,0.25,2,5,10,15,20,25,30,40,50,100];
+              let multi = [0.5,2,10,15,20,25,30,50,70,100];
+              let escrito = ["(Meio bitcoin)", "(Dois bitcoins)","(Dez bitcoins)", "(Quinze bitcoins)","(Vinte bitcoins)","(Trinta bitcoins)","(Cinquenta bitcoins)","(Cem bitcoins)","(Duzentos bitcoins)", "(500 bitcoins)"];
+
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
-	    for (let i = 0; i < 12; i++) {
+	    for (let i = 0; i < 10; i++) {
 	      let tr = tbody.insertRow();
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	    
-	      td_cotacao.innerText = "BTC"+" "+multi[i];
+	      td_cotacao.innerText = "BTC"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

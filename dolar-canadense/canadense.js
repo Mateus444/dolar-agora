@@ -42,7 +42,7 @@
   		}
 	  
 	  function criarTabela() {
-	    let multi = [2,10,20,25,30,50,100,300,500,1000];
+	    let multi = [2,10,20,30,40,50,100,300,500,1000];
             let escrito = ["(Dois dólares)", "(Dez dólares)","(Vinte dólares)", "(Trinta dólares)","(Quarenta dólares)","(Cinquenta dólares)","(Cem dólares)","(Trezentos dólares)","(Quinhentos dólares)", "(Mil dólares)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";

@@ -355,7 +355,7 @@ li {
 }
 
 .grafico {
-	max-width: 700px;
+	max-width: 600px;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -448,6 +448,10 @@ a:hover {
 	.sobre  {
 		display: none;
 	}
+        td {
+         font-weight: normal;
+         font-size: 17px;
+        }
 	
 	h1 {
 	  text-align: left;

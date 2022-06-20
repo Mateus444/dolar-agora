@@ -429,6 +429,10 @@ a:hover {
 		overflow: auto;
 		width: 70%;
 	}
+        td { 
+          font-weight: normal;
+          font-size: 17px;
+        }
 
 	#opcoes li {
 		margin-bottom: 20px;

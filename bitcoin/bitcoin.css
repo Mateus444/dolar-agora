@@ -61,8 +61,7 @@
 	margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+ 
 }
 
 .adsense-2 {
@@ -70,6 +69,8 @@
 	margin: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .input-area {

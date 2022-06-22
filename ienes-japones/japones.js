@@ -43,7 +43,8 @@
   		}
 	  
 	  function criarTabela() {
-	    let multi = [2,10,20,30,50,100,1000,1500];
+let multi = [2,10,20,30,40,50,100,200,300,1000];
+            let escrito = ["(Dois ienes)", "(Dez ienes)","(Vinte ienes)", "(Trinta ienes)","(Quarenta ienes)","(Cinquenta ienes)","(Cem ienes)","(Duzentos ienes)","(Trezentos ienes)", "(Mil ienes)"];
 	    let tbody = document.getElementById("tbody");
 	    tbody.innerText = "";
 	    for (let i = 0; i < 8; i++) {
@@ -51,7 +52,7 @@
 	      let td_cotacao = tr.insertCell();
 	      let td_real = tr.insertCell();
 	                              
-	      td_cotacao.innerText = "¥"+" "+multi[i];
+	      td_cotacao.innerText = "¥"+" "+multi[i]+" "+escrito[i];
 	      let conversao = multi[i] * cotacaoFloat;
 	      td_real.innerText = conversao.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 	    }

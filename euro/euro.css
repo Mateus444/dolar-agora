@@ -4,8 +4,6 @@
 	box-sizing: 0;
 }
 
-
-
 .container-principal {
 	max-width: 1366px;
 	background-color: #4E586E;
@@ -59,27 +57,24 @@
 
 .adsense {
 	max-width: 728px;
+	height:  90px;
+	background-color: #596277;
 	margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .adsense-2 {
 	max-width: 728px;
 	margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
+
 
 .input-area {
 	max-width: 600px;
 	margin: auto;
  margin-top: 20px; 
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -89,12 +84,10 @@
 	box-shadow: 0px 0px 15px black;
 	
 }
-
 .redes-sociais {
   margin: auto;
   max-width: 600px;
 }
-
 .data-area {
   width: 90%;
   height: 20px;
@@ -163,11 +156,10 @@ h1, #cotacao, h3 {
   font-family: inter;
 }
 
-
 section {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 40px;
+  
   max-width: 600px;
   background-color: #2E3648;
   padding: 10px;
@@ -237,7 +229,6 @@ main p {
   line-height: 1.5;
   font-family: inter;
   font-weight: normal;
-word-wrap: break-word;
 }
 #menu {
 	width: 35px;
@@ -255,6 +246,7 @@ word-wrap: break-word;
 	background-image: url("imagens/menu-aberto2.png");
 }
 
+
 #opcoes {
 	background-color: #2E3648;
 	max-width: 200px;
@@ -268,11 +260,22 @@ word-wrap: break-word;
 	margin-left: 20px;
 	display: none;
 }
+.band-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.band-icon img {
+  width: 100%;
+  height: 100%;
+}
 #opcoes a {
 	 color: #DCDCDC;
 	 text-decoration: none;
-  margin-left: 4px;
+        margin-left: 4px;
 }
 
 #opcoes a:hover {
@@ -291,19 +294,6 @@ li {
   display: flex;
   flex-direction: inline;
   align-items: center;
-}
-
-.band-icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.band-icon img {
-  width: 100%;
-  height: 100%;
 }
 
 #moeda-cod1, #moeda-cod2 {
@@ -361,8 +351,8 @@ li {
 .grafico {
 	max-width: 600px;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 22px;
 	padding: 15px;
 	border-radius: 15px;
 	background-color: #2E3648;
@@ -434,10 +424,10 @@ a:hover {
 		overflow: auto;
 		width: 70%;
 	}
-        td {
-          font-weight: normal;
-          font-size: 17px;
-         }
+       td {
+        font-weight: normal;
+        font-size: 18px;
+       }
 
 	#opcoes li {
 		margin-bottom: 20px;
@@ -486,11 +476,6 @@ a:hover {
 		width: 70%;
 	}
 
-	#opcoes li {
-		margin-bottom: 20px;
-		font-size: 17px;
-	}
-
 	#menu {
 		margin-left: 15px;
 	}
@@ -502,6 +487,6 @@ a:hover {
 
 	.grafico h3 {
 		margin-left: 15px;
-	
+	}
 
 }

@@ -61,8 +61,8 @@
 	margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .adsense-2 {
@@ -70,8 +70,6 @@
 	margin: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .input-area {
@@ -390,8 +388,8 @@ li {
 .grafico {
 	max-width: 600px;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 10px;
+	margin-bottom: 22px;
 	padding: 15px;
 	border-radius: 15px;
 	background-color: #2E3648;

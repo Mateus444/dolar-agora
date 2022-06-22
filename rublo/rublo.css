@@ -4,7 +4,6 @@
 	box-sizing: 0;
 }
 
-
 .container-principal {
 	max-width: 1366px;
 	background-color: #4E586E;
@@ -61,15 +60,13 @@
 	height:  90px;
 	background-color: #596277;
 	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .adsense-2 {
 	max-width: 728px;
 	margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 
@@ -158,7 +155,6 @@ h1, #cotacao, h3 {
   margin-right: 3px;
   font-family: inter;
 }
-
 
 section {
   margin: auto;
@@ -355,8 +351,8 @@ li {
 .grafico {
 	max-width: 600px;
 	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 22px;
 	padding: 15px;
 	border-radius: 15px;
 	background-color: #2E3648;
@@ -428,10 +424,10 @@ a:hover {
 		overflow: auto;
 		width: 70%;
 	}
-        td{
-   font-size: 17px;
-font-weight: normal;
-      }
+       td {
+        font-weight: normal;
+        font-size: 18px;
+       }
 
 	#opcoes li {
 		margin-bottom: 20px;

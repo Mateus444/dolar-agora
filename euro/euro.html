@@ -1,307 +1,343 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Converter euro para Real brasileiro - cotação do euro - gráfico dos últimos 30 dias - tabela de conversão">
-	<meta name="author" content="Mateus Gustavo">
-	<meta name="keywords" content="Euro, preço, hoje, agora, cotação, converter, conversor, real, brasileiro">
-	<title>Cotação do euro hoje</title>
-	<link href="euro.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="imagens/euros.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald&display=swap" rel="stylesheet">
-	<style>
-.adsense-mobile {
-margin: auto;
-width: 320px;
-height: 50;
-display: none;
-margin-top: 8px;
-margin-bottom: 8px;
-}
-            @media only screen and (max-width: 750px) {
-  .adsense {
-    display: none;
- }
-.adsense-mobile {
-   display: block;
-}
-}
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Converter euro para Real brasileiro - cotação do euro - gráfico dos últimos 30 dias - tabela de conversão">
+  <meta name="author" content="Mateus Gustavo">
+  <meta name="keywords" content="Euro, preço, hoje, agora, cotação, converter, conversor, real, brasileiro">
+  <title>Cotação do euro hoje</title>
+  <link href="euro.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="imagens/euros.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    .adsense-mobile {
+      margin: auto;
+      width: 320px;
+      height: 50;
+      display: none;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media only screen and (max-width: 750px) {
+      .adsense {
+        display: none;
+      }
+
+      .adsense-mobile {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<body>
 
-	<div class="container-principal">
-		<header class="header">
-		  <div id="menu" onclick="chamarMenu()">
-			
-		</div>
-			<div class="icone" onclick="inicio()">
-			  <img src="imagens/site-icone.png" alt="Icone do site">
-			</div>
-			
-			<div class="sobre">
-				<a href="https://dolaragora.online/sobre.html" target="_blank">Sobre</a>
-			</div>
-				
-		</header>
-	 <nav>
-		<ul id="opcoes">
+  <body>
 
-                </ul>
-	</nav>
+    <div class="container-principal">
+      <header class="header">
+        <div id="menu" onclick="chamarMenu()">
 
-		<div class="adsense">
-                <script type="text/javascript">
-	atOptions = {
-		'key' : 'abf68fa195948de921b35233a74ee493',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformats.com/abf68fa195948de921b35233a74ee493/invoke.js"></scr' + 'ipt>');
-</script>
-		</div>
- <div class="adsense-mobile">
-<script type="text/javascript">
-	atOptions = {
-		'key' : '668175596c8b46df6e09d2631b89a52f',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformats.com/668175596c8b46df6e09d2631b89a52f/invoke.js"></scr' + 'ipt>');
-</script>
-</div>
-	  <h1>Converter euro para real</h1>
-	  <h2 id="cotacao">Cotação do euro hoje - R$ <strong id="cotAtual">0</strong> reais</h2>
-		
-		<div class="input-area">
-			<div class="moeda-icon">
-				<div class="moeda">
-					<img src="imagens/euros.png" alt="icone do euro">
-				</div>
-				<h3 id="moeda-nome">Euro</h3>
-			</div>
-                        <div class="data-area">
-		         <strong id="data"></strong>
-		        </<li><div class="band-icon"><img src="/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/index.html">Dólar Americano</a></li>
-				<li><div class="band-icon"><img src="/rublo/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/rublo/rublo.html">Rublo Russo</a></li>
-				<li><div class="band-icon"><img src="/dolar-canadense/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/dolar-canadense/canadense.html">Dólar Canadense</a></li>
-				<li><div class="band-icon"><img src="/dolar-australiano/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/dolar-australiano/australiano.html">Dólar Australiano</a></li>
-				<li><div class="band-icon"><img src="/bitcoin/imagens/bitcoin-icon.png" alt="bandeira da moeda"</img></div><a href="/bitcoin/bitcoin.html">Bitcoin</a></li>
-				<li><div class="band-icon"><img src="/peso-argentino/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/peso-argentino/argentino.html">Peso Argentino</a></li>
-				<li><div class="band-icon"><img src="/ethereum/imagens/ethereum-icon.png" alt="bandeira da moeda"</img></div><a href="/ethereum/ethereum.html">Ethereum</a></li>
-				<li><div class="band-icon"><img src="/euro/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/euro/euro.html">Euro</a></li>
-				<li><div class="band-icon"><img src="/dogecoin/imagens/dogecoin-icon.png" alt="bandeira da moeda"</img></div><a href="/dogecoin/dogecoin.html">Dogecoin</a></li>
-				<li><div class="band-icon"><img src="/libra/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/libra/libra.html">Libra Esterlina</a></li>
-				<li><div class="band-icon"><img src="/dolar-hongkong/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/dolar-hongkong/hongkong.html">Dólar Hong-Kong</a></li>
-				<li><div class="band-icon"><img src="/peso-mexicano/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/peso-mexicano/mexicano.html">Peso Mexicano</a></li>
-				<li><div class="band-icon"><img src="/dolar-taiuanes/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/dolar-taiuanes/taiuanes.html">Dólar taiwanês</a></li>
-				<li><div class="band-icon"><img src="/franco-suico/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/franco-suico/suico.html">Franco Suíço</a></li>
-				<li><div class="band-icon"><img src="/yual-chines/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/yual-chines/chines.html">Yuan Chinês</a></li>
-				<li><div class="band-icon"><img src="/ienes-japones/imagens/bandeira.png" alt="bandeira da moeda"</img></div><a href="/ienes-japones/japones.html">Iene Japonês</a></li>
-		div>
-			<div class="conversor">
-			<div id="input-1">	    
-				<span id="moeda-cod1">€</span>
-				<input id="entrada-1" type="number" value="1">
-			</div>
-	
-			<div id="input-2">
-				<span id="moeda-cod1">R$</span>
-			 	<input id="entrada-2" type="number" value="0.00">
-			</div>
-		
-			<div class="variacao">
-				<h5 id="varia">Variação:</h5>
-				<span id="variaValor">0.00</span><span id="porcent">%</span>
-			</div>
-		</div>
-              <div class="redes-sociais">          <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                 <div class="addthis_inline_share_toolbox"></div>
-	     </div>
-	  <div class="adsense-2"> 
-    <script async="async" data-cfasync="false" src="//pl17271803.safestgatetocontent.com/e0af1f821fdd2d95fa8fb295667a28c1/invoke.js"></script>
-<div id="container-e0af1f821fdd2d95fa8fb295667a28c1"></div>
-</div>
-	  
-	  
-		<div class="grafico">
-			<h3>Gráfico dos últimos 30 dias</h3>
-			<canvas id="myChart"></canvas>
+        </div>
+        <div class="icone" onclick="inicio()">
+          <img src="imagens/site-icone.png" alt="Icone do site">
+        </div>
 
-		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script>
-			var url30 = "https://economia.awesomeapi.com.br/json/daily/EUR-BRL/30";
-			var xhttp = new XMLHttpRequest();
+        <div class="sobre">
+          <a href="https://dolaragora.online/sobre.html" target="_blank">Sobre</a>
+        </div>
 
-			xhttp.onreadystatechange = function() {
-		    	if (this.readyState == 4 && this.status == 200) {
-			       	var retorno = xhttp.responseText;
-			       	var retornoParaObj = JSON.parse(retorno);
+      </header>
+      <nav>
+        <ul id="opcoes">
 
-			       	//pegar e formatar as cotações
-			       	var cotacoes = [];
-			       	var cotacoesParaFloat = [];
-			       	var cotacoesFormatadas = [];
-		    	  
-			       	for (let i = 0; i < 30; i++) {
-			       		cotacoes[i] = retornoParaObj[i].bid;
-			       		cotacoesParaFloat[i] = parseFloat(cotacoes[i]);
-			       		cotacoesFormatadas[i] = cotacoesParaFloat[i].toFixed(2);
-			       	}
+        </ul>
+      </nav>
 
-			       	//pegar a data de cada cotação em milisegungos e formatar
-			       	var segundos = [];
-			       	var segundosInt = [];
-			       	var datas = [];
-			       	for (let i = 0; i < 30; i++) {
-			       		segundos[i] = retornoParaObj[i].timestamp;
-			       		segundosInt[i] = parseInt(segundos[i]);
-			       		datas[i] = new Date(segundosInt[i] * 1000);
-			       	}
+      <div class="adsense">
+        <script type="text/javascript">
+          atOptions = {
+            'key': 'abf68fa195948de921b35233a74ee493',
+            'format': 'iframe',
+            'height': 90,
+            'width': 728,
+            'params': {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformats.com/abf68fa195948de921b35233a74ee493/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="adsense-mobile">
+        <script type="text/javascript">
+          atOptions = {
+            'key': '668175596c8b46df6e09d2631b89a52f',
+            'format': 'iframe',
+            'height': 50,
+            'width': 320,
+            'params': {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformats.com/668175596c8b46df6e09d2631b89a52f/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <h1>Converter euro para real</h1>
+      <h2 id="cotacao">Cotação do euro hoje - R$ <strong id="cotAtual">0</strong> reais</h2>
 
-			       	var dias = [];
-			       	var meses = [];
-			       	var ano = [];
-			       	for (let i = 0; i < 30; i++) {
-			       		dias[i] = ("0"+datas[i].getDate()).slice(-2);
-			       		meses[i] = ("0"+(datas[i].getMonth()+1)).slice(-2);
-			       		ano[i] = datas[i].getFullYear();
-			       	}
+      <div class="input-area">
+        <div class="moeda-icon">
+          <div class="moeda">
+            <img src="imagens/euros.png" alt="icone do euro">
+          </div>
+          <h3 id="moeda-nome">Euro</h3>
+        </div>
+        <div class="data-area">
+          <strong id="data"></strong>
+        </div>
+      </div>
+          <div class="band-icon"><img src="/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/index.html">Dólar Americano</a></li>
+          <li>
+            <div class="band-icon"><img src="/rublo/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/rublo/rublo.html">Rublo Russo</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/dolar-canadense/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/dolar-canadense/canadense.html">Dólar Canadense</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/dolar-australiano/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/dolar-australiano/australiano.html">Dólar Australiano</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/bitcoin/imagens/bitcoin-icon.png" alt="bandeira da moeda" </img></div><a href="/bitcoin/bitcoin.html">Bitcoin</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/peso-argentino/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/peso-argentino/argentino.html">Peso Argentino</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/ethereum/imagens/ethereum-icon.png" alt="bandeira da moeda" </img></div><a href="/ethereum/ethereum.html">Ethereum</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/euro/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/euro/euro.html">Euro</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/dogecoin/imagens/dogecoin-icon.png" alt="bandeira da moeda" </img></div><a href="/dogecoin/dogecoin.html">Dogecoin</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/libra/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/libra/libra.html">Libra Esterlina</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/dolar-hongkong/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/dolar-hongkong/hongkong.html">Dólar Hong-Kong</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/peso-mexicano/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/peso-mexicano/mexicano.html">Peso Mexicano</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/dolar-taiuanes/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/dolar-taiuanes/taiuanes.html">Dólar taiwanês</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/franco-suico/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/franco-suico/suico.html">Franco Suíço</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/yual-chines/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/yual-chines/chines.html">Yuan Chinês</a>
+          </li>
+          <li>
+            <div class="band-icon"><img src="/ienes-japones/imagens/bandeira.png" alt="bandeira da moeda" </img></div><a href="/ienes-japones/japones.html">Iene Japonês</a>
+          </li>
+          
+          <div class="conversor">
+            <div id="input-1">
+              <span id="moeda-cod1">€</span>
+              <input id="entrada-1" type="number" value="1">
+            </div>
 
-			       	var periodos = [];
-			       	for (i = 0; i < 30; i++) {
-			       		periodos[i] = dias[i]+"/"+meses[i]+"/"+ano[i];
-			       	}
+            <div id="input-2">
+              <span id="moeda-cod1">R$</span>
+              <input id="entrada-2" type="number" value="0.00">
+            </div>
 
-			       	periodos.reverse();
-			       	cotacoesFormatadas.reverse();
+            <div class="variacao">
+              <h5 id="varia">Variação:</h5>
+              <span id="variaValor">0.00</span><span id="porcent">%</span>
+            </div>
+          </div>
+          <div class="redes-sociais">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox"></div>
+          </div>
+          <div class="adsense-2">
+            <script async="async" data-cfasync="false" src="//pl17271803.safestgatetocontent.com/e0af1f821fdd2d95fa8fb295667a28c1/invoke.js"></script>
+            <div id="container-e0af1f821fdd2d95fa8fb295667a28c1"></div>
+          </div>
 
-			       	//Desenha o grafico na tela
-			       	var ctx = document.getElementById('myChart');
-			       	Chart.defaults.font.size = 12;
-			       	Chart.defaults.color = '#DCDCDC';
-			       	var cotGraficco = new Chart(ctx, {
-						type: 'line',
-						data: {
-							labels: periodos,
-							datasets: [{
-								label: "Cotação",
-							 pointRadius: 0,
-								data: cotacoesFormatadas,
-								borderWidth: 4,
-								borderColor: "#F54B64",
+
+          <div class="grafico">
+            <h3>Gráfico dos últimos 30 dias</h3>
+            <canvas id="myChart"></canvas>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+              var url30 = "https://economia.awesomeapi.com.br/json/daily/EUR-BRL/30";
+              var xhttp = new XMLHttpRequest();
+
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  var retorno = xhttp.responseText;
+                  var retornoParaObj = JSON.parse(retorno);
+
+                  //pegar e formatar as cotações
+                  var cotacoes = [];
+                  var cotacoesParaFloat = [];
+                  var cotacoesFormatadas = [];
+
+                  for (let i = 0; i < 30; i++) {
+                    cotacoes[i] = retornoParaObj[i].bid;
+                    cotacoesParaFloat[i] = parseFloat(cotacoes[i]);
+                    cotacoesFormatadas[i] = cotacoesParaFloat[i].toFixed(2);
+                  }
+
+                  //pegar a data de cada cotação em milisegungos e formatar
+                  var segundos = [];
+                  var segundosInt = [];
+                  var datas = [];
+                  for (let i = 0; i < 30; i++) {
+                    segundos[i] = retornoParaObj[i].timestamp;
+                    segundosInt[i] = parseInt(segundos[i]);
+                    datas[i] = new Date(segundosInt[i] * 1000);
+                  }
+
+                  var dias = [];
+                  var meses = [];
+                  var ano = [];
+                  for (let i = 0; i < 30; i++) {
+                    dias[i] = ("0" + datas[i].getDate()).slice(-2);
+                    meses[i] = ("0" + (datas[i].getMonth() + 1)).slice(-2);
+                    ano[i] = datas[i].getFullYear();
+                  }
+
+                  var periodos = [];
+                  for (i = 0; i < 30; i++) {
+                    periodos[i] = dias[i] + "/" + meses[i] + "/" + ano[i];
+                  }
+
+                  periodos.reverse();
+                  cotacoesFormatadas.reverse();
+
+                  //Desenha o grafico na tela
+                  var ctx = document.getElementById('myChart');
+                  Chart.defaults.font.size = 12;
+                  Chart.defaults.color = '#DCDCDC';
+                  var cotGraficco = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                      labels: periodos,
+                      datasets: [{
+                        label: "Cotação",
+                        pointRadius: 0,
+                        data: cotacoesFormatadas,
+                        borderWidth: 4,
+                        borderColor: "#F54B64",
 							}]
-						},
-		  options: {
-        interaction: {
-        intersect: false,
-        mode: 'index',
-       },
-    }
-			       	
-		       	    });
-		        }
-			};
+                    },
+                    options: {
+                      interaction: {
+                        intersect: false,
+                        mode: 'index',
+                      },
+                    }
 
-			xhttp.open("GET", url30, true);
-			xhttp.send();
-		</script>
-		</div>
-               <div class="adsense-2"> 
-   
-              </div>
-<h3>Tabela de conversão do euro</h3>
-	  <section>
-	    <table>
-	    <tr id="table-header">
-	      <th>Euro</th>
-	      <th>Real</th>
-	    </tr>
-	      <tbody id="tbody">
-	      </tbody>
-	  </table>
-	    
-	  </section>
-  <main>
-	    <h3>Cotação do euro hoje</h3>
-	    <p>A <strong>cotação</strong> do <strong>euro</strong> é de <strong>R$ </strong><strong id="cotAtual2"></strong> reais</p>
-	    <h3>Sobre o euro</h3>
-            <p>O euro (símbolo: €; código: EUR) é a moeda oficial da zona Euro, formada por 19 países: Alemanha, Áustria, Bélgica, Chipre, Eslováquia, Eslovênia,  Espanha, Estônia, Finlândia, França,   Grécia, Irlanda, Itália, Letônia, Luxemburgo,. Malta, Países Baixos e Portugal. O euro possui moedas de 1, 2, 5, 10, 20, 50 cêntimos e notas de 5 €, 10 €, 20 €, 50 €, 100 €, 200 €, 500€ euros. Emitidas pelo banco Central Europeu.</p>
-	    <h3>Euro comercial ou turismo?</h3>
+                  });
+                }
+              };
+
+              xhttp.open("GET", url30, true);
+              xhttp.send();
+            </script>
+          </div>
+          <div class="adsense-2">
+
+          </div>
+          <h3>Tabela de conversão do euro</h3>
+          <section>
+            <table>
+              <tr id="table-header">
+                <th>Euro</th>
+                <th>Real</th>
+              </tr>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+
+          </section>
+          <main>
+            <h3>Cotação do euro hoje</h3>
+            <p>A <strong>cotação</strong> do <strong>euro</strong> é de <strong>R$ </strong><strong id="cotAtual2"></strong> reais</p>
+            <h3>Sobre o euro</h3>
+            <p>O euro (símbolo: €; código: EUR) é a moeda oficial da zona Euro, formada por 19 países: Alemanha, Áustria, Bélgica, Chipre, Eslováquia, Eslovênia, Espanha, Estônia, Finlândia, França, Grécia, Irlanda, Itália, Letônia, Luxemburgo,. Malta, Países Baixos e Portugal. O euro possui moedas de 1, 2, 5, 10, 20, 50 cêntimos e notas de 5 €, 10 €, 20 €, 50 €, 100 €, 200 €, 500€ euros. Emitidas pelo banco Central Europeu.</p>
+            <h3>Euro comercial ou turismo?</h3>
             <p>O <strong>euro comercial</strong> é utilizado em grandes transações entre empresas ou bancos. Por exemplo em compra e venda de mercadorias entre empresas.<br><br>
-O <strong>euro turismo</strong> é o euro que você precisaria comprar em uma casa de cambio caso pretendesse viajar para algum país da zona euro. O preço do euro turismo é um pouco mais caro que o euro comercial pelo fato das transações serem muito menor em relação ao gasto operacional para realizar essa transação.</p>
-           <h3>Conversor de euro</h3>
+              O <strong>euro turismo</strong> é o euro que você precisaria comprar em uma casa de cambio caso pretendesse viajar para algum país da zona euro. O preço do euro turismo é um pouco mais caro que o euro comercial pelo fato das transações serem muito menor em relação ao gasto operacional para realizar essa transação.</p>
+            <h3>Conversor de euro</h3>
             <p>O dolaragora.online é um conversor de moeda online que permiti que fique atualizado da cotação do Euro (EUR). E também realizar a conversão para real brasileiro e virse-versa de forma simples e rápida. Para isso, você só precisa colocar o valor que deseja converter no campo da moeda que deseja realizar a conversão e pronto. Será convertido automaticamente.</p>
-	    <h3>Observação</h3>
+            <h3>Observação</h3>
             <p>Esse conversor tem como objetivo ser de caráter informativo. Não utilize esse site como fonte antes de realizar alguma transação! Para isso consulte algum banco ou serviço especializado.</p>
-           
-           </main>
-	  
-		<footer>
-			  <a href="/sobre.html" target="_blank">Sobre</a>
-  	  <a href="/politicas.html" target="_blank">Política de Privacidade</a>
-           <a href="mailto:contatodolaragora@gmail.com?subject=DólarAgora">contato</a>
-		</footer>
-	</div>
-		<script>
-		let input1 = document.getElementById("entrada-1");
-		let input1Fundo = document.getElementById("input-1");
-		input1.addEventListener('focus', function() {
-			input1.style.backgroundColor = "#3C4352";
-			input1Fundo.style.backgroundColor = "#3C4352";
-		});
-		let input2 = document.getElementById("entrada-2");
-		let input2Fundo = document.getElementById("input-2");
-		input2.addEventListener('focus', function() {
-			input2.style.backgroundColor = "#3C4352";
-			input2Fundo.style.backgroundColor = "#3C4352";
-		});
 
-		input1.addEventListener('blur', function() {
-			input1.style.backgroundColor = "#4E586E";
-			input1Fundo.style.backgroundColor = "#4E586E";
-		});
+          </main>
 
-		input2.addEventListener('blur', function() {
-			input2.style.backgroundColor = "#4E586E";
-			input2Fundo.style.backgroundColor = "#4E586E";
-		});
+          <footer>
+            <a href="/sobre.html" target="_blank">Sobre</a>
+            <a href="/politicas.html" target="_blank">Política de Privacidade</a>
+            <a href="mailto:contatodolaragora@gmail.com?subject=DólarAgora">contato</a>
+          </footer>
+        </div>
+        <script>
+          let input1 = document.getElementById("entrada-1");
+          let input1Fundo = document.getElementById("input-1");
+          input1.addEventListener('focus', function() {
+            input1.style.backgroundColor = "#3C4352";
+            input1Fundo.style.backgroundColor = "#3C4352";
+          });
+          let input2 = document.getElementById("entrada-2");
+          let input2Fundo = document.getElementById("input-2");
+          input2.addEventListener('focus', function() {
+            input2.style.backgroundColor = "#3C4352";
+            input2Fundo.style.backgroundColor = "#3C4352";
+          });
 
+          input1.addEventListener('blur', function() {
+            input1.style.backgroundColor = "#4E586E";
+            input1Fundo.style.backgroundColor = "#4E586E";
+          });
 
-	</script>
-	<script>
-		let botaoMenu = document.getElementById("menu");
-		let botaoStatus = document.getElementById("opcoes");
+          input2.addEventListener('blur', function() {
+            input2.style.backgroundColor = "#4E586E";
+            input2Fundo.style.backgroundColor = "#4E586E";
+          });
+        </script>
+        <script>
+          let botaoMenu = document.getElementById("menu");
+          let botaoStatus = document.getElementById("opcoes");
 
-		function chamarMenu() {
-			if (botaoStatus.style.display != "block") {
-				document.getElementById("opcoes").style.display = "block";
-			}
-			else {
-				document.getElementById("opcoes").style.display = "none";
-			}
-		}
-	</script>
-	<script>
-		function inicio() {
-			window.location.href="/";
-		}
-	</script>
-	</div>
+          function chamarMenu() {
+            if (botaoStatus.style.display != "block") {
+              document.getElementById("opcoes").style.display = "block";
+            }
+            else {
+              document.getElementById("opcoes").style.display = "none";
+            }
+          }
+        </script>
+        <script>
+          function inicio() {
+            window.location.href = "/";
+          }
+        </script>
+      </div>
 
-	<script type="text/javascript" src="euro.js"></script>
-       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-628fef235f1fd796"></script>
-</body>
+      <script type="text/javascript" src="euro.js"></script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-628fef235f1fd796"></script>
+  </body>
+
 </html>

@@ -35,8 +35,8 @@ margin-bottom: 8px;
         </style>
 </head>
 
-<body>
-<body>
+<body onload="grafico()">
+
 
 	<div class="container-principal">
 		<header class="header">
@@ -141,6 +141,7 @@ margin-bottom: 8px;
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script>
+function grafico() {
 			var url30 = "https://economia.awesomeapi.com.br/json/daily/ARS-BRL/30";
 			var xhttp = new XMLHttpRequest();
 
@@ -216,6 +217,7 @@ margin-bottom: 8px;
 
 			xhttp.open("GET", url30, true);
 			xhttp.send();
+}
 		</script>
 		</div>
 <h3>Tabela de conversão do peso argentino</h3>

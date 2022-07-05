@@ -35,9 +35,7 @@ margin-bottom: 8px;
 }
         </style>
 </head>
-
-<body>
-<body>
+<body onload="grafico()">
 
 	<div class="container-principal">
 		<header class="header">
@@ -49,7 +47,7 @@ margin-bottom: 8px;
 			</div>
 			
 			<div class="sobre">
-				<a href="https://dolaragora.online/sobre.html" target="_blank">Sobre</a>
+				<a href="/sobre.html" target="_blank">Sobre</a>
 			</div>
 				
 		</header>
@@ -139,9 +137,10 @@ margin-bottom: 8px;
 		<div class="grafico">
 			<h3>Gráfico dos últimos 30 dias</h3>
 			<canvas id="myChart"></canvas>
-
+               
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script>
+                    function grafico() {
 			var url30 = "https://economia.awesomeapi.com.br/json/daily/CNY-BRL/30";
 			var xhttp = new XMLHttpRequest();
 
@@ -217,6 +216,7 @@ margin-bottom: 8px;
 
 			xhttp.open("GET", url30, true);
 			xhttp.send();
+               }
 		</script>
 		</div>
 <h3>Tabela de conversão do yuan</h3>
@@ -294,6 +294,5 @@ margin-bottom: 8px;
 	</div>
 
 	<script type="text/javascript" src="chines.js"></script>
-       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-628fef235f1fd796"></script>
 </body>
 </html>

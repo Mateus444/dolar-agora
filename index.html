@@ -38,7 +38,7 @@ margin-bottom: 8px;
 </head>
 
 <body>
-<body>
+<body onload="grafico()">
 
 	<div class="container-principal">
 		<header class="header">
@@ -146,6 +146,7 @@ margin-bottom: 8px;
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script>
+                    function grafico() {
 			var url30 = "https://economia.awesomeapi.com.br/json/daily/USD-BRL/30";
 			var xhttp = new XMLHttpRequest();
 
@@ -221,6 +222,7 @@ margin-bottom: 8px;
 
 			xhttp.open("GET", url30, true);
 			xhttp.send();
+            }
 		</script>
 		</section>
                 
